@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Yoshi's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Icon.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Achievements</h1>
+</section>
+
+<!--About Me Content-->
+
+<section class="contact">
+    <h1>Contacts</h1>
+    <p>Message me by email or come say hi! :)</p>
+
+    <div class="row">
+        <div class="contact-col">
+            <h3>Business Email</h3>
+            <p> yoshimin175@gmail.com</p>
+        </div>
+        <div class="contact-col">
+            <h3>Instagram</h3>
+            <p> Username: @tito_.yoshi</p>
+        </div>
+        <div class="contact-col">
+            <h3>Discord</h3>
+            <p> Username: Yosh15ishere</p>
+        </div>
+        
+
+    </div>
+</section>
+
+<!-----blogs----->
+
+<section class="blogs">
+    <h1>Yoshi's Blog</h1>
+    <p>Check up on what Josh's up to</p>
+
+    <div class="row">
+        <div class="blogs-col">
+            <img src="images/OIP.jpg">
+            <div class="layer">
+                <h3>SCHOOL</h3>
+            </div>
+            
+        </div>
+        <div class="blogs-col">
+            <img src="images/OIP.jpg">
+            <div class="layer">
+                <h3>PROJECTS</h3>
+            </div>
+            
+        </div>
+        <div class="blogs-col">
+            <img src="images/OIP.jpg">
+            <div class="layer">
+                <h3>HOBBIES</h3>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>Social Media</h4>
+    <p>Follow what I do on other platforms :)</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-reddit-alien"></i>
+        <i class="fa fa-envelope"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+<!---Javascript for Menu--->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
